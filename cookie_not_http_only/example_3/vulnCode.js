@@ -61,7 +61,7 @@ app.post('/pessoas', async (req, res) => {
       },
       timeout: 10000,
       withCredentials: true,
-      cookie: { httpOnly: true }
+      cookie: { httpOnly: false }
     },
       
     );
