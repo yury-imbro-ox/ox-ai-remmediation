@@ -61,7 +61,7 @@ app.post('/pessoas', async (req, res) => {
       },
       timeout: 10000,
       withCredentials: true,
-      cookie: { httpOnly: true }
+      cookie: { httpOnly: false }
     },
       
     );
@@ -84,8 +84,8 @@ app.post('/pessoas', async (req, res) => {
       dadosExtrasFinais.email = email;
       dadosExtrasFinais.urlFoto = urlFoto;
       dadosExtrasFinais.nUSP = calcularNumeroUSP(dadosExtrasFinais);
-      console.log(dadosExtrasFinais)
-      res.send(dadosExtrasFinais)
+      console.log(dadosExtrasFinais);
+      res.send(dadosExtrasFinais);
     
     }catch(error) {
       console.error(error)
