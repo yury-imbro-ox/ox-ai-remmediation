@@ -3,7 +3,7 @@ import express from 'express';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import bodyParser from 'body-parser';
 import {recuperarDadosPessoaEspecifica, extrairInformacoesParaRecuperarPessoaEspecifica} from '../backend/webscrappingMethods.js'
-import { calcularNumeroUSP } from '../backend/segredo.js'
+import {calcularNumeroUSP} from '../backend/segredo.js'
 
 
 const urlBaseBuscaPessoas = 'https://www.icmc.usp.br/templates/icmc2015/php/pessoas.php'
